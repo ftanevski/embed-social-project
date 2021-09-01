@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid">
         <div class="row">
-            <div class="col">
+            <div class="col-md-1">
                 <div class="dropdown">
                     <select class="btn btn-default dropdown-toggle"
                             data-toggle="dropdown"
@@ -13,7 +13,7 @@
                     </select>
                 </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-10">
               <button class="btn btn-secondary">Filter Submissions</button>
             </div>
             <div class="col-md-1">
