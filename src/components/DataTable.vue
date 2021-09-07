@@ -1,5 +1,5 @@
 <template>
-    <div class="col border tableContainer">
+    <div class="col border">
         <data-table-row 
                    v-for="response in responses" 
                    :row="response" 
