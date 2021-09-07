@@ -1,9 +1,9 @@
 <template>
     <div class="col border">
         <data-table-row 
-                   v-for="response in responses" 
-                   :row="response" 
-                   :key="response.id"
+            v-for="response in responses" 
+            :row="response" 
+            :key="response.id"
 		>
         </data-table-row>
     </div>

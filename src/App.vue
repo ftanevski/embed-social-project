@@ -1,24 +1,22 @@
 <template>
     <div class="container-fluid ">
         <div class="row headerRow">
-            <div class="col-md-1">
-                <div class="dropdown">
-                    <select
-                        class="btn btn-default dropdown-toggle"
-                        data-toggle="dropdown"
-                        aria-expanded="false"
-                    >
-                        <option value="10">10</option>
-                        <option value="20">20</option>
-                        <option value="30">30</option>
-                        <option value="50">50</option>
-                    </select>
-                </div>
+            <div class="dropdown">
+                <select
+                    class="btn btn-default dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="50">50</option>
+                </select>
             </div>
-            <div class="col-md-9">
+            <div class="leftButton">
                 <button class="btn btn-secondary">Filter Submissions</button>
             </div>
-            <div class="col-md-1">
+            <div class="rightButton">
                 <button class="btn btn-primary">Create Submission</button>
             </div>
         </div>
@@ -63,5 +61,13 @@ export default {
 .headerRow {
     display: flex;
     margin-bottom: 10px;
+}
+
+.leftButton {
+    margin-left: 20px;
+}
+
+.rightButton {
+    margin-left: auto;
 }
 </style>
