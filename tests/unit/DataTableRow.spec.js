@@ -19,15 +19,15 @@ describe('DataTableRow', () => {
 		            status: "pending"
 				}
 			}
-		})
-	})
+		});
+	});
 	 
 	test('Snapshot matches', () => {
 		expect(wrapper.element).toMatchSnapshot();
-	})
+	});
 
 	test('DataTableRow renders total of 8 columns', () => {
 		const dataTableRowColumns = wrapper.findAllComponents(DataTableRowColumns);
 		expect(dataTableRowColumns).toHaveLength(8);
-	})
-})
+	});
+});

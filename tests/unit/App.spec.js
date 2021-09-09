@@ -7,14 +7,14 @@ describe('App', () => {
 
     beforeEach(() => {
         wrapper = mount(App);
-    })
+    });
 
 	test('Snapshot matches', () => {
 		expect(wrapper.element).toMatchSnapshot();
-	})
+	});
 
 	test('App renders the DataTable component', () => {
 		const dataTable = wrapper.findComponent(DataTable);
 		expect(dataTable.exists()).toBe(true);
-	})
-})
+	});
+});

@@ -8,14 +8,14 @@ describe('DataTable', () => {
 
 	beforeEach(() => {
 		wrapper = mount(DataTable);
-	})
+	});
 
 	test('Snapshot matches', () => {
 		expect(wrapper.element).toMatchSnapshot();
-	})
+	});
 
 	test('DataTable renders all rows from component', () => {
 		const dataTableRow = wrapper.findAllComponents(DataTableRow);
 		expect(dataTableRow).toHaveLength(dummyData.length);
-	})
-})
+	});
+});
