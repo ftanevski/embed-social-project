@@ -75,11 +75,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Name
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               Ivana Trajkova
             </div>
@@ -89,11 +91,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Email
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               ivana_tr@example.com
             </div>
@@ -103,11 +107,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Recommendation
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               yes
             </div>
@@ -117,11 +123,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Feedback
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non enim gravida ante feugiat fermentum in vitae sem. Mauris ligula ante, finibus quis convallis eget, auctor vehicula massa. Nunc arcu lectus, viverra ac enim eu, suscipit fermentum sapien. Nam maximus facilisis enim sit amet tempor. Curabitur at euismod augue, et aliquet elit. Mauris dui libero, consequat sit amet lacus sit amet, vulputate interdum tellus. Morbi condimentum porttitor ornare.
             </div>
@@ -131,11 +139,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Date
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               13/04/2021
             </div>
@@ -145,11 +155,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Form_name
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               Form 1
             </div>
@@ -159,11 +171,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Form_type
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               popup
             </div>
@@ -173,11 +187,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Status
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               pending
             </div>
@@ -227,11 +243,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Name
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               Ivona Atanasova
             </div>
@@ -241,11 +259,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Email
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               ivana_ar@example.com
             </div>
@@ -255,11 +275,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Recommendation
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               maybe
             </div>
@@ -269,11 +291,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Feedback
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non enim gravida ante feugiat fermentum in vitae sem. Mauris ligula ante, finibus quis conva
             </div>
@@ -283,11 +307,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Date
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               10/11/2020
             </div>
@@ -297,11 +323,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Form_name
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               Form 2
             </div>
@@ -311,11 +339,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Form_type
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               page
             </div>
@@ -325,11 +355,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Status
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               approved
             </div>
@@ -379,11 +411,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Name
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               Jonathan
             </div>
@@ -393,11 +427,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Email
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               jonathan@gmail.com
             </div>
@@ -407,11 +443,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Recommendation
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               maybe
             </div>
@@ -421,11 +459,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Feedback
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               My neighbor Karly has one of these. She works as a gambler and she says it looks tall. I saw one of these in Spratly Islands and I bought one. works okay.
             </div>
@@ -435,11 +475,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Date
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               16/03/2021
             </div>
@@ -449,11 +491,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Form_name
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               Form 3
             </div>
@@ -463,11 +507,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Form_type
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               page
             </div>
@@ -477,11 +523,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Status
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               approved
             </div>
@@ -531,11 +579,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Name
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               Nicole
             </div>
@@ -545,11 +595,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Email
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               nicole@yahoo.com
             </div>
@@ -559,11 +611,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Recommendation
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               no
             </div>
@@ -573,11 +627,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Feedback
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               The box this comes in is 4 yard by 5 inch and weights 12 pound! i use it profusely when i'm in my garage.
             </div>
@@ -587,11 +643,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Date
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               02/04/2021
             </div>
@@ -601,11 +659,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Form_name
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               Form 4
             </div>
@@ -615,11 +675,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Form_type
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               popup
             </div>
@@ -629,11 +691,13 @@ exports[`App Snapshot matches 1`] = `
           >
             <p
               class="text-muted"
+              data-testid="title-test"
             >
               Status
             </p>
             <div
               class="font-w600"
+              data-testid="text-test"
             >
               pending
             </div>

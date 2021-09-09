@@ -1,9 +1,9 @@
 <template>
 	<div class="col-md-2">
-		<p class="text-muted">
+		<p class="text-muted" data-testid="title-test">
 			{{ titleToUpperCase }}
 		</p>
-        <div class="font-w600">
+        <div class="font-w600" data-testid="text-test">
             {{ text }}
         </div>
 	</div>

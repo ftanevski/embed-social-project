@@ -13,11 +13,13 @@ exports[`DataTableRow Snapshot matches 1`] = `
     >
       <p
         class="text-muted"
+        data-testid="title-test"
       >
         Name
       </p>
       <div
         class="font-w600"
+        data-testid="text-test"
       >
         Nicole
       </div>
@@ -27,11 +29,13 @@ exports[`DataTableRow Snapshot matches 1`] = `
     >
       <p
         class="text-muted"
+        data-testid="title-test"
       >
         Email
       </p>
       <div
         class="font-w600"
+        data-testid="text-test"
       >
         nicole@yahoo.com
       </div>
@@ -41,11 +45,13 @@ exports[`DataTableRow Snapshot matches 1`] = `
     >
       <p
         class="text-muted"
+        data-testid="title-test"
       >
         Recommendation
       </p>
       <div
         class="font-w600"
+        data-testid="text-test"
       >
         no
       </div>
@@ -55,11 +61,13 @@ exports[`DataTableRow Snapshot matches 1`] = `
     >
       <p
         class="text-muted"
+        data-testid="title-test"
       >
         Feedback
       </p>
       <div
         class="font-w600"
+        data-testid="text-test"
       >
         The box this comes in is 4 yard by 5 inch and weights 12 pound! i use it profusely when i'm in my garage.
       </div>
@@ -69,11 +77,13 @@ exports[`DataTableRow Snapshot matches 1`] = `
     >
       <p
         class="text-muted"
+        data-testid="title-test"
       >
         Date
       </p>
       <div
         class="font-w600"
+        data-testid="text-test"
       >
         02/04/2021
       </div>
@@ -83,11 +93,13 @@ exports[`DataTableRow Snapshot matches 1`] = `
     >
       <p
         class="text-muted"
+        data-testid="title-test"
       >
         Form_name
       </p>
       <div
         class="font-w600"
+        data-testid="text-test"
       >
         Form 4
       </div>
@@ -97,11 +109,13 @@ exports[`DataTableRow Snapshot matches 1`] = `
     >
       <p
         class="text-muted"
+        data-testid="title-test"
       >
         Form_type
       </p>
       <div
         class="font-w600"
+        data-testid="text-test"
       >
         popup
       </div>
@@ -111,11 +125,13 @@ exports[`DataTableRow Snapshot matches 1`] = `
     >
       <p
         class="text-muted"
+        data-testid="title-test"
       >
         Status
       </p>
       <div
         class="font-w600"
+        data-testid="text-test"
       >
         pending
       </div>
