@@ -5,16 +5,17 @@ import dummyData from '../../src/assets/data/DummyData';
 
 describe('DataTable', () => {
 	let wrapper;
+
 	beforeEach(() => {
-		wrapper = mount(DataTable)
+		wrapper = mount(DataTable);
 	})
 
 	test('Snapshot matches', () => {
-		expect(wrapper.element).toMatchSnapshot()
+		expect(wrapper.element).toMatchSnapshot();
 	})
 
 	test('DataTable renders all rows from component', () => {
-		const dataTableRow = wrapper.findAllComponents(DataTableRow)
-		expect(dataTableRow).toHaveLength(dummyData.length)
+		const dataTableRow = wrapper.findAllComponents(DataTableRow);
+		expect(dataTableRow).toHaveLength(dummyData.length);
 	})
 })

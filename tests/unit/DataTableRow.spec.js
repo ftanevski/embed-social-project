@@ -4,6 +4,7 @@ import DataTableRowColumns from '../../src/components/DataTableRowColumns';
 
 describe('DataTableRow', () => {
 	let wrapper;
+
 	beforeEach(() => {
 		wrapper = mount(DataTableRow, {
 			props: {
@@ -22,11 +23,11 @@ describe('DataTableRow', () => {
 	})
 	 
 	test('Snapshot matches', () => {
-		expect(wrapper.element).toMatchSnapshot()
+		expect(wrapper.element).toMatchSnapshot();
 	})
 
 	test('DataTableRow renders total of 8 columns', () => {
-		const dataTableRowColumns = wrapper.findAllComponents(DataTableRowColumns)
-		expect(dataTableRowColumns).toHaveLength(8)
+		const dataTableRowColumns = wrapper.findAllComponents(DataTableRowColumns);
+		expect(dataTableRowColumns).toHaveLength(8);
 	})
 })
