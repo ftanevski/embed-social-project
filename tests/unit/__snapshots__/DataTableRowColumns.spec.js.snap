@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DataTableRowColumns Snapshot matches 1`] = `
+<div
+  class="col-md-2"
+>
+  <p
+    class="text-muted"
+    data-testid="title-test"
+  >
+    Name
+  </p>
+  <div
+    class="font-w600"
+    data-testid="text-test"
+  >
+    Jonathan
+  </div>
+</div>
+`;
