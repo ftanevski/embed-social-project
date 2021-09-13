@@ -18,7 +18,6 @@ export default {
 			required: true,
 			description: 'String that defines the key from the key: value properties of the submissions'
 		},
-
 		text: {
             type: String,
 			required: true,

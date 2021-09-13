@@ -1,7 +1,7 @@
 let getSubmissions = async () => {
-    const response = await fetch('../assets/json/submissions.json');
-    const data = response.json();
-    return data;
+    let response = await fetch('../assets/json/submissions.json');
+    let submissions = await response.json();
+    return submissions; 
 }
 
 export default getSubmissions;
