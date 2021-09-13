@@ -4,7 +4,7 @@ import DataTableRow from '../../src/components/DataTableRow';
 import dummyData from '../../src/assets/data/DummyData';
 import formattedData from '../../src/services/formatSubmissions';
 
-jest.mock('../../src/services/formatSubmissions.js')
+jest.mock('../../src/services/formatSubmissions.js');
 
 describe('DataTable', () => {
 	let wrapper;
