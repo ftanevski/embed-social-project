@@ -4,11 +4,11 @@ let formattedData = async () => {
 	let submissions = await getSubmissions();
 
 	for (let submission of submissions) {
-		submissions.form_type = submissions.form.form_type;
-		submissions.form = submissions.form.name;
+		submission.form_type = submission.form.form_type;
+		submission.form = submission.form.name;
 	}
 
-	return data;
+	return submissions;
 }
 
 export default formattedData;
