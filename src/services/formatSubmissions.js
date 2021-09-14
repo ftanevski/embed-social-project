@@ -1,4 +1,4 @@
-import getSubmissions from "./getSubmissions";
+import getSubmissions from './getSubmissions';
 
 let formattedData = async () => {
 	let submissions = await getSubmissions();
@@ -8,7 +8,7 @@ let formattedData = async () => {
 		submission.form = submission.form.name;
 	}
 
-	return data;
+	return submissions;
 }
 
 export default formattedData;
