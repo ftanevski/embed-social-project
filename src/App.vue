@@ -43,9 +43,9 @@ export default {
 </script>
 
 <style>
-@import url('https://veganmanager.com/src-old/assets/css/bootstrap.min.css');
-@import url('https://veganmanager.com/src-old/assets/css/oneui.min.css');
-@import url('https://veganmanager.com/src-old/assets/css/style-new.css');
+@import url('./assets/css/bootstrap.min.css');
+@import url('./assets/css/oneui.min.css');
+@import url('./assets/css/style.css');
 
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
