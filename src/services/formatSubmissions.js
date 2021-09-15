@@ -1,4 +1,4 @@
-import getSubmissions from "./getSubmissions";
+import getSubmissions from './getSubmissions';
 
 let formattedData = async () => {
 	let submissions = await getSubmissions();
