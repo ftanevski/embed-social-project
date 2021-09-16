@@ -12,6 +12,7 @@
 <script>
 import DataTableRow from './DataTableRow';
 import dummyData from '../assets/data/DummyData';
+import formattedData from '../services/formatSubmissions';
 
 export default {
     name: 'DataTable',
@@ -22,6 +23,14 @@ export default {
         return {
             responses: dummyData
         };
+    },
+    async created() {
+        try {
+            let submissions = await formattedData();
+            return submissions;
+        } catch(error) {
+            return error;
+        }
     }
 };
 </script>
