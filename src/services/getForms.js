@@ -1,6 +1,6 @@
 let getForms = async () => {
-    const response = await fetch('../assets/json/forms.json');
-    const data = await response.json();
+    let response = await fetch('./forms.json');
+    let data = await response.json();
     return data;
 }
 

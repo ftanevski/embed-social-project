@@ -21,7 +21,10 @@
             </div>
         </div>
         <div class="row">
-            <data-table></data-table>
+            <data-table
+                :responses="tableSubmissions"
+            >
+            </data-table>
         </div>
         <div class="footerRow">
             <div class="justify-content-center">
@@ -33,20 +36,29 @@
 
 <script>
 import DataTable from './components/DataTable';
+import formattedData from './services/formatSubmissions';
 
 export default {
     name: 'App',
     components: {
         DataTable
+    },
+    data() {
+        return {
+            tableSubmissions: []
+        }
+    }, 
+    async created() {
+        try {
+            this.tableSubmissions = await formattedData();
+        } catch(error) {
+            return error;
+        }
     }
 };
 </script>
 
 <style>
-@import url('./assets/css/bootstrap.min.css');
-@import url('./assets/css/oneui.min.css');
-@import url('./assets/css/style.css');
-
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     font-size: 13px;

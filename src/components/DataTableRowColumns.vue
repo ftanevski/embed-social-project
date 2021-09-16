@@ -1,7 +1,7 @@
 <template>
 	<div class="col-md-2">
 		<p class="text-muted" data-testid="title-test">
-			{{ titleToUpperCase }}
+			{{ titleToUpperCase.replace("_", " ") }}
 		</p>
         <div class="font-w600" data-testid="text-test">
             {{ text }}
@@ -26,7 +26,7 @@ export default {
 	},
 	computed: {
 		titleToUpperCase() {
-            return this.title.charAt(0).toUpperCase() + this.title.slice(1, this.title.length)
+            return this.title.charAt(0).toUpperCase() + this.title.slice(1, this.title.length);
 		} 
 	}
 }
