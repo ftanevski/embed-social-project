@@ -34,9 +34,9 @@ export default {
     },
     props: {
 		row: {
-			type: Array,
+			type: Object,
 			required: true,
-            description: 'Array of objects containing form response information'
+            description: 'Object containing form response information'
 		}
 	}
 };
