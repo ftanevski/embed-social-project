@@ -9,7 +9,7 @@ jest.mock('../../src/services/formatSubmissions.js');
 describe('DataTable', () => {
 	let wrapper;
 
-	beforeEach(async () => {
+	beforeEach(() => {
         jest.clearAllMocks();
 		wrapper = mount(DataTable);
 	});
