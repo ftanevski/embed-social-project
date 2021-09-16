@@ -19,9 +19,9 @@ export default {
     },
     props: {
         responses: {
-            type: Object,
-            required: true,
-            description: 'Objects that contain data for each row in the table.'
+            type: Array,
+            default: () => [],
+            description: 'Array of objects that contain data for each row in the table.'
         }
     }
 };
