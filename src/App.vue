@@ -26,11 +26,6 @@
             >
             </data-table>
         </div>
-        <div class="footerRow">
-            <div class="justify-content-center">
-                <button class="btn btn-primary">Load More</button>
-            </div>
-        </div>
     </div>
 </template>
 
@@ -47,7 +42,7 @@ export default {
         return {
             tableSubmissions: []
         }
-    }, 
+    },
     async created() {
         try {
             this.tableSubmissions = await formattedData();
@@ -63,10 +58,6 @@ export default {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     font-size: 13px;
     padding: 20px;
-    margin: 20px;
-}
-
-.footerRow {
     margin: 20px;
 }
 
