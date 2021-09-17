@@ -2,10 +2,10 @@
     <div class="row">
         <div class="colContainer">
             <data-table-row-columns
-                v-for="(key, value) in row"
+                v-for="(key, value, index) in row"
                 :title="value"
                 :text="key"
-                :key="key"
+                :key="index"
             >
             </data-table-row-columns>
             <div class="col-md-2">
@@ -36,9 +36,9 @@ export default {
 		row: {
 			type: Object,
 			required: true,
-            description: 'Objects containing form response information'
+            description: 'An object containing form response information'
 		}
-	},
+	}
 };
 </script>
 
