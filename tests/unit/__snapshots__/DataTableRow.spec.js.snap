@@ -95,7 +95,7 @@ exports[`DataTableRow Snapshot matches 1`] = `
         class="text-muted"
         data-testid="title-test"
       >
-        Form_name
+        Form name
       </p>
       <div
         class="font-w600"
@@ -111,7 +111,7 @@ exports[`DataTableRow Snapshot matches 1`] = `
         class="text-muted"
         data-testid="title-test"
       >
-        Form_type
+        Form type
       </p>
       <div
         class="font-w600"

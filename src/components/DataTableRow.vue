@@ -36,7 +36,7 @@ export default {
 		row: {
 			type: Object,
 			required: true,
-            description: 'An object containing form response information'
+            description: 'Object containing form response information'
 		}
 	}
 };
