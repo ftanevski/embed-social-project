@@ -12,6 +12,7 @@
             class="btn btn-primary"
             v-if="showButton"
             @click="showMorePosts"
+            data-testid="load-more-test"
         >
         Load More
         </button>
@@ -35,7 +36,7 @@ export default {
     props: {
         responses: {
             type: Array,
-            required: true,
+            default: () => [],
             description: 'Array of objects that contain data for each row in the table.'
         }
     },

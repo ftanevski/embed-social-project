@@ -2,7 +2,7 @@
 
 exports[`App Snapshot matches 1`] = `
 <div
-  class="container-fluid "
+  class="container-fluid"
 >
   <div
     class="row headerRow"
@@ -59,25 +59,19 @@ exports[`App Snapshot matches 1`] = `
   <div
     class="row"
   >
+    
     <div
       class="col border"
     >
       
       
     </div>
-  </div>
-  <div
-    class="footerRow"
-  >
     <div
-      class="justify-content-center"
+      class="button-container justify-content-center mt-5"
     >
-      <button
-        class="btn btn-primary"
-      >
-        Load More
-      </button>
+      <!--v-if-->
     </div>
+    
   </div>
 </div>
 `;
