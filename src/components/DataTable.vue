@@ -1,4 +1,5 @@
 <template>
+    <data-table-header @update-posts="updateNumOfPosts"></data-table-header>
     <div class="col border">
         <data-table-row
             v-for="(response, index) in numberOfPosts"
@@ -21,15 +22,17 @@
 
 <script>
 import DataTableRow from './DataTableRow';
+import DataTableHeader from './DataTableHeader';
 
 export default {
     name: 'DataTable',
     components: {
-        DataTableRow
+        DataTableRow,
+        DataTableHeader
     },
     data() {
         return {
-            currentPosts: 5,
+            displayedPosts: 5,
             postsToLoad: 5
         }
     },
@@ -42,15 +45,19 @@ export default {
     },
     computed: {
         numberOfPosts() {
-            return this.responses.slice(0, this.currentPosts);
+            return this.responses.slice(0, this.displayedPosts);
         },
         showButton() {
-            return this.currentPosts < this.responses.length;
+            return this.displayedPosts <= this.responses.length;
         }
     },
     methods: {
         showMorePosts() {
-            this.currentPosts += this.postsToLoad;
+            this.displayedPosts += this.postsToLoad;
+        },
+        updateNumOfPosts(option) {
+            this.displayedPosts = option;
+            this.postsToLoad = option;
         }
     }
 };
