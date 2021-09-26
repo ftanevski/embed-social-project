@@ -9,7 +9,7 @@
         </data-table-row>
     </div>
     <div class="button-container justify-content-center mt-5">
-        <button 
+        <button
             class="btn btn-primary"
             v-if="showButton"
             @click="showMorePosts"
