@@ -3,7 +3,6 @@
         <div class="row">
             <data-table
                 :responses="tableSubmissions"
-                :dropDownValue="selectedValue"
             >
             </data-table>
         </div>
