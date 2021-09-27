@@ -6,6 +6,74 @@ exports[`DataTable Snapshot matches 1`] = `
 >
   
   <div
+    class="row header-row"
+  >
+    <div
+      class="dropdown"
+    >
+      <select
+        class="form-control"
+        data-testid="dropdown-test"
+      >
+        
+        <option
+          class="select-options"
+          data-testid="dropdown-options-test"
+          value="5"
+        >
+          5
+        </option>
+        <option
+          class="select-options"
+          data-testid="dropdown-options-test"
+          value="10"
+        >
+          10
+        </option>
+        <option
+          class="select-options"
+          data-testid="dropdown-options-test"
+          value="15"
+        >
+          15
+        </option>
+        <option
+          class="select-options"
+          data-testid="dropdown-options-test"
+          value="20"
+        >
+          20
+        </option>
+        <option
+          class="select-options"
+          data-testid="dropdown-options-test"
+          value="25"
+        >
+          25
+        </option>
+        
+      </select>
+    </div>
+    <div
+      class="left-button"
+    >
+      <button
+        class="btn btn-secondary"
+      >
+        Filter Submissions
+      </button>
+    </div>
+    <div
+      class="right-button"
+    >
+      <button
+        class="btn btn-primary"
+      >
+        Create Submission
+      </button>
+    </div>
+  </div>
+  <div
     class="col border"
   >
     
