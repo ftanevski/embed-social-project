@@ -1,8 +1,8 @@
 <template>
     <modal 
         v-if="modalActive"
-        @click.self="closeModal"
-        @close-modal="closeModal">
+        @close-modal="closeModal"
+    >
         <template #header>
             Lorem Ipsum
         </template>

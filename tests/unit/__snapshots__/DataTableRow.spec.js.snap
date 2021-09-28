@@ -5,7 +5,7 @@ exports[`DataTableRow Snapshot matches 1`] = `
   class="row"
 >
   <div
-    class="colContainer"
+    class="col-container"
   >
     
     <div

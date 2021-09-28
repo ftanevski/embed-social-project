@@ -8,6 +8,7 @@ exports[`App Snapshot matches 1`] = `
     class="row"
   >
     
+    <!--v-if-->
     <div
       class="row header-row"
     >

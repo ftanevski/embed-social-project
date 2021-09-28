@@ -5,6 +5,7 @@ exports[`DataTable Snapshot matches 1`] = `
   data-v-app=""
 >
   
+  <!--v-if-->
   <div
     class="row header-row"
   >
@@ -81,7 +82,7 @@ exports[`DataTable Snapshot matches 1`] = `
       class="row"
     >
       <div
-        class="colContainer"
+        class="col-container"
       >
         
         <div
@@ -249,7 +250,7 @@ exports[`DataTable Snapshot matches 1`] = `
       class="row"
     >
       <div
-        class="colContainer"
+        class="col-container"
       >
         
         <div
@@ -417,7 +418,7 @@ exports[`DataTable Snapshot matches 1`] = `
       class="row"
     >
       <div
-        class="colContainer"
+        class="col-container"
       >
         
         <div
@@ -585,7 +586,7 @@ exports[`DataTable Snapshot matches 1`] = `
       class="row"
     >
       <div
-        class="colContainer"
+        class="col-container"
       >
         
         <div
@@ -753,7 +754,7 @@ exports[`DataTable Snapshot matches 1`] = `
       class="row"
     >
       <div
-        class="colContainer"
+        class="col-container"
       >
         
         <div
