@@ -1,5 +1,5 @@
 <template>
-    <div class="modal in modal-bg" @click.self="closeModal">
+    <div class="modal in modal-bg">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="block remove-margin-b">
@@ -14,36 +14,23 @@
                         </ul>
                         <h3>
                             <slot name="header">
-                                Lorem Ipsum
                             </slot>
                         </h3>
                     </div>
                     <div class="block-content">
                         <slot name="text">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                                labore et dolore magna aliqua.
-                            </p>
                         </slot>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" data-dismiss="modal" @click="closeModal">
-                        <i class="fa fa-times push-10-r">
-                        </i>
-                        Cancel
-                    </button>
-                    <button class="btn btn-primary">
-                        <i class="fas fa-check push-10-r">
-                        </i>
-                        Confirm
-                    </button>
+                    <slot name="footer">
+                    </slot>
                 </div>
             </div>
         </div>
     </div>
 </template>
-
+ 
 <script>
 export default {
     name: 'Modal',
@@ -57,7 +44,7 @@ export default {
     }
 }
 </script>
-
+ 
 <style scoped>
 .modal-bg {
     background-color: rgba(0, 0, 0, 0.4);
