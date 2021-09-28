@@ -23,6 +23,6 @@ describe('DataTableHeader', () => {
         expect(emittedEvents).toHaveLength(1);
 
         let expectedPayload = 10;
-        expect(toString(emittedEvents[0][0])).toMatch(toString(expectedPayload))
+        expect(toString(emittedEvents[0][0])).toMatch(toString(expectedPayload));
     });
 });
