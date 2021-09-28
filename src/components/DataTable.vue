@@ -1,10 +1,15 @@
 <template>
+    <modal 
+        v-if="modalActive"
+        @close-modal="closeModal">
+    </modal>
     <data-table-header @update-posts="updateNumOfPosts"></data-table-header>
     <div class="col border">
         <data-table-row
             v-for="(response, index) in numberOfPosts"
             :row="response"
             :key="index"
+            @open-modal="changeModalStatus"
 		>
         </data-table-row>
     </div>
@@ -23,17 +28,20 @@
 <script>
 import DataTableRow from './DataTableRow';
 import DataTableHeader from './DataTableHeader';
+import Modal from './Modal';
 
 export default {
     name: 'DataTable',
     components: {
         DataTableRow,
-        DataTableHeader
+        DataTableHeader,
+        Modal
     },
     data() {
         return {
             displayedPosts: 5,
-            postsToLoad: 5
+            postsToLoad: 5,
+            modalActive: false
         }
     },
     props: {
@@ -58,6 +66,12 @@ export default {
         updateNumOfPosts(option) {
             this.displayedPosts = option;
             this.postsToLoad = option;
+        },
+        changeModalStatus() {
+            this.modalActive = true;
+        },
+        closeModal() {
+            this.modalActive = false;
         }
     }
 };
