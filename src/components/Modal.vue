@@ -7,24 +7,20 @@
                         <ul class="block-options">
                             <li>
                                 <button data-dismiss="modal" type="button" @click="closeModal" data-testid="times-button-test">
-                                    <i class="fa fa-times">
-                                    </i>
+                                    <i class="fa fa-times"></i>
                                 </button>
                             </li>
                         </ul>
                         <h3>
-                            <slot name="header">
-                            </slot>
+                            <slot name="header"></slot>
                         </h3>
                     </div>
                     <div class="block-content">
-                        <slot name="text">
-                        </slot>
+                        <slot name="text"></slot>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <slot name="footer">
-                    </slot>
+                    <slot name="footer"></slot>
                 </div>
             </div>
         </div>
