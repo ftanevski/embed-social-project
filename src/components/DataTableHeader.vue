@@ -40,9 +40,8 @@ export default {
         'update-posts'
     ],
     methods: {
-        updateNumOfPosts(option) {
-            let selectedNumOfPosts = +option.target.value;
-            this.$emit('update-posts', selectedNumOfPosts);
+        updateNumOfPosts() {
+            this.$emit('update-posts', this.selectedValue);
         }
     }
 }
