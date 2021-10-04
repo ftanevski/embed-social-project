@@ -1,8 +1,9 @@
 <template>
     <modal 
         v-if="modalActive"
-        @click.self="closeModal"
-        @close-modal="closeModal">
+        @click.self="changeModalStatus(false)"
+        @close-modal="changeModalStatus(false)"
+    >
         <template #header>
             Lorem Ipsum
         </template>
@@ -13,15 +14,11 @@
             </p>
         </template>
         <template #footer>
-            <button class="btn btn-secondary" data-dismiss="modal" @click="closeModal">
-                <i class="fa fa-times push-10-r">
-                </i>
-                Cancel
+            <button class="btn btn-secondary" data-dismiss="modal" @click="changeModalStatus(false)">
+                <i class="fa fa-times push-10-r"></i> Cancel
             </button>
             <button class="btn btn-primary">
-                <i class="fas fa-check push-10-r">
-                </i>
-                Confirm
+                <i class="fas fa-check push-10-r"></i> Confirm
             </button>
         </template>
     </modal>
@@ -31,7 +28,7 @@
             v-for="(response, index) in numberOfPosts"
             :row="response"
             :key="index"
-            @open-modal="changeModalStatus"
+            @open-modal="changeModalStatus(true)"
 		>
         </data-table-row>
     </div>
@@ -89,11 +86,8 @@ export default {
             this.displayedPosts = option;
             this.postsToLoad = option;
         },
-        changeModalStatus() {
-            this.modalActive = true;
-        },
-        closeModal() {
-            this.modalActive = false;
+        changeModalStatus(value) {
+            this.modalActive = value;
         }
     }
 };
