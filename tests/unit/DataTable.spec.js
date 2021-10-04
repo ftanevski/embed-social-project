@@ -6,6 +6,8 @@ import testData from '../../public/testData.json';
  
 describe('DataTable', () => {
 	let wrapper;
+
+    let spyOnUpdateNumOfPosts = jest.spyOn(DataTable.methods, 'updateNumOfPosts')
  
 	beforeEach(() => {
 		wrapper = mount(DataTable, {
@@ -50,22 +52,26 @@ describe('DataTable', () => {
         expect(wrapper.find('[data-testid="load-more-test"]').exists()).toBeFalsy();
 	});
  
-    test('Selecting a value will change the number of posts displayed and number of posts loaded with each click', async () => {
-        let dropdownSelector = '[data-testid="dropdown-test"]';
-        let dropdownOptionsSelector = '[data-testid="dropdown-options-test"]';
- 
-        wrapper.find(dropdownSelector);
-        wrapper.findAll(dropdownOptionsSelector)[1].element.selected = true;
- 
-        await wrapper.find(dropdownSelector).trigger('change');
-        expect(wrapper.findAllComponents(DataTableRow)).toHaveLength(10);
- 
-        let button = wrapper.find('[data-testid="load-more-test"]');
-        await button.trigger('click');
-        expect(wrapper.findAllComponents(DataTableRow)).toHaveLength(20);
- 
-        wrapper.findAll(dropdownOptionsSelector)[0].element.selected = true;
-        await wrapper.find(dropdownSelector).trigger('change');
+    test('Header component emits an event with a value, which will trigger the updateNumOfPosts method and changes will be reflected on the table', async () => {
+        let dataTableHeader = mount(DataTableHeader);
+        dataTableHeader.vm.$emit('update-posts', 10);
+
+        let emitValue = dataTableHeader.emitted('update-posts')[0][0];
+        expect(wrapper.vm.displayedPosts).toBe(5);
         expect(wrapper.findAllComponents(DataTableRow)).toHaveLength(5);
+
+        await wrapper.vm.updateNumOfPosts(emitValue);
+        expect(wrapper.vm.displayedPosts).toBe(10);
+        expect(wrapper.findAllComponents(DataTableRow)).toHaveLength(10);
+        expect(spyOnUpdateNumOfPosts).toHaveBeenCalled();
+    });
+
+    test('updateNumOfPosts takes a value and changes the number of rows in the table', async () => {
+        expect(wrapper.vm.displayedPosts).toBe(5);
+        expect(wrapper.findAllComponents(DataTableRow)).toHaveLength(5);
+
+        await wrapper.vm.updateNumOfPosts(10);
+        expect(wrapper.vm.displayedPosts).toBe(10);
+        expect(wrapper.findAllComponents(DataTableRow)).toHaveLength(10);        
     });
 });
