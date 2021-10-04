@@ -28,8 +28,8 @@ describe('Modal', () => {
 
     test('Clicking outside of the modal will emit the closeModal to the parent component', async () => {
         let modalBg = wrapper.find('[data-testid="modal-bg-test"]');
-    
         await modalBg.trigger('click');
+        
         let emittedEvents = wrapper.emitted('close-modal');
         expect(emittedEvents).toHaveLength(1);
     });
