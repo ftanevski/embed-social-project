@@ -1,10 +1,34 @@
 <template>
+    <modal 
+        v-if="modalActive"
+        @click.self="changeModalStatus(false)"
+        @close-modal="changeModalStatus(false)"
+    >
+        <template #header>
+            Lorem Ipsum
+        </template>
+        <template #text>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua.
+            </p>
+        </template>
+        <template #footer>
+            <button class="btn btn-secondary" data-dismiss="modal" @click="changeModalStatus(false)">
+                <i class="fa fa-times push-10-r"></i> Cancel
+            </button>
+            <button class="btn btn-primary">
+                <i class="fas fa-check push-10-r"></i> Confirm
+            </button>
+        </template>
+    </modal>
     <data-table-header @update-posts="updateNumOfPosts"></data-table-header>
     <div class="col border">
         <data-table-row
             v-for="(response, index) in numberOfPosts"
             :row="response"
             :key="index"
+            @open-modal="changeModalStatus(true)"
 		>
         </data-table-row>
     </div>
@@ -19,21 +43,24 @@
         </button>
     </div>
 </template>
-
+ 
 <script>
 import DataTableRow from './DataTableRow';
 import DataTableHeader from './DataTableHeader';
-
+import Modal from './Modal';
+ 
 export default {
     name: 'DataTable',
     components: {
         DataTableRow,
-        DataTableHeader
+        DataTableHeader,
+        Modal
     },
     data() {
         return {
             displayedPosts: 5,
-            postsToLoad: 5
+            postsToLoad: 5,
+            modalActive: false
         }
     },
     props: {
@@ -58,11 +85,14 @@ export default {
         updateNumOfPosts(option) {
             this.displayedPosts = option;
             this.postsToLoad = option;
+        },
+        changeModalStatus(value) {
+            this.modalActive = value;
         }
     }
 };
 </script>
-
+ 
 <style>
 .button-container {
     margin: 30px;

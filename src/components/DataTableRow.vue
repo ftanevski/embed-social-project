@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-        <div class="colContainer">
+        <div class="col-container">
             <data-table-row-columns
                 v-for="(key, value, index) in row"
                 :title="value"
@@ -13,7 +13,7 @@
                 <button class="btn btn-default btn-sm push-5-r">
                     <i class="fa fa-edit"></i>
                 </button>
-                <button class="btn btn-default btn-sm push-5-r">
+                <button class="btn btn-default btn-sm push-5-r" @click="emitOpenModal">
                     <i class="fa fa-eye"></i>
                 </button>
                 <button class="btn btn-default btn-sm push-5-r">
@@ -32,18 +32,26 @@ export default {
     components: {
         DataTableRowColumns
     },
+    emits: [
+        'open-modal'
+    ],
     props: {
 		row: {
 			type: Object,
 			required: true,
             description: 'Object containing form response information'
 		}
-	}
+	},
+    methods: {
+        emitOpenModal() {
+            this.$emit('open-modal');
+        }
+    }
 };
 </script>
 
 <style>
-.colContainer {
+.col-container {
     align-items: center;
     display: flex;
     padding: 20px;
