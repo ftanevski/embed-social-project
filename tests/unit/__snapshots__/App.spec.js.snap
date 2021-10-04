@@ -5,61 +5,77 @@ exports[`App Snapshot matches 1`] = `
   class="container-fluid"
 >
   <div
-    class="row headerRow"
-  >
-    <div
-      class="dropdown"
-    >
-      <select
-        aria-expanded="false"
-        class="btn btn-default dropdown-toggle"
-        data-toggle="dropdown"
-      >
-        <option
-          value="10"
-        >
-          10
-        </option>
-        <option
-          value="20"
-        >
-          20
-        </option>
-        <option
-          value="30"
-        >
-          30
-        </option>
-        <option
-          value="50"
-        >
-          50
-        </option>
-      </select>
-    </div>
-    <div
-      class="leftButton"
-    >
-      <button
-        class="btn btn-secondary"
-      >
-        Filter Submissions
-      </button>
-    </div>
-    <div
-      class="rightButton"
-    >
-      <button
-        class="btn btn-primary"
-      >
-        Create Submission
-      </button>
-    </div>
-  </div>
-  <div
     class="row"
   >
     
+    <div
+      class="row header-row"
+    >
+      <div
+        class="dropdown"
+      >
+        <select
+          class="form-control"
+          data-testid="dropdown-test"
+        >
+          
+          <option
+            class="select-options"
+            data-testid="dropdown-options-test"
+            value="5"
+          >
+            5
+          </option>
+          <option
+            class="select-options"
+            data-testid="dropdown-options-test"
+            value="10"
+          >
+            10
+          </option>
+          <option
+            class="select-options"
+            data-testid="dropdown-options-test"
+            value="15"
+          >
+            15
+          </option>
+          <option
+            class="select-options"
+            data-testid="dropdown-options-test"
+            value="20"
+          >
+            20
+          </option>
+          <option
+            class="select-options"
+            data-testid="dropdown-options-test"
+            value="25"
+          >
+            25
+          </option>
+          
+        </select>
+      </div>
+      <div
+        class="left-button"
+      >
+        <button
+          class="btn btn-secondary"
+        >
+          Filter Submissions
+        </button>
+      </div>
+      <div
+        class="right-button"
+      >
+        <button
+          class="btn btn-primary"
+        >
+          Create Submission
+        </button>
+      </div>
+    </div>
     <div
       class="col border"
     >
