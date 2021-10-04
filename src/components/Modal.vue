@@ -13,7 +13,7 @@
                                 <button
                                     data-dismiss="modal"
                                     type="button"
-                                    @click="closeModal"
+                                    @click="closeModal" 
                                     data-testid="times-button-test"
                                 >
                                     <i class="fa fa-times"></i>
