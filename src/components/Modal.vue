@@ -10,9 +10,9 @@
                     <div class="block-header bg-primary-darker">
                         <ul class="block-options">
                             <li>
-                                <button 
-                                    data-dismiss="modal" 
-                                    type="button" 
+                                <button
+                                    data-dismiss="modal"
+                                    type="button"
                                     @click="closeModal"
                                     data-testid="times-button-test"
                                 >
