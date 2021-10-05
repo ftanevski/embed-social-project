@@ -1,7 +1,6 @@
 <template>
     <modal 
         v-if="modalActive"
-        @click.self="changeModalStatus(false)"
         @close-modal="changeModalStatus(false)"
     >
         <template #header>

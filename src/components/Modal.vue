@@ -1,12 +1,21 @@
 <template>
-    <div class="modal in modal-bg">
+    <div 
+        class="modal in modal-bg" 
+        data-testid="modal-bg-test"
+        @click.self="closeModal"
+    >
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content" data-testid="modal-content-test">
                 <div class="block remove-margin-b">
                     <div class="block-header bg-primary-darker">
                         <ul class="block-options">
                             <li>
-                                <button data-dismiss="modal" type="button" @click="closeModal">
+                                <button
+                                    data-dismiss="modal"
+                                    type="button"
+                                    @click="closeModal" 
+                                    data-testid="times-button-test"
+                                >
                                     <i class="fa fa-times"></i>
                                 </button>
                             </li>
