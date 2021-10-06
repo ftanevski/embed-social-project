@@ -4,7 +4,7 @@
         data-testid="modal-bg-test"
         @click.self="closeModal"
     >
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-card">
             <div class="modal-content" data-testid="modal-content-test">
                 <div class="block remove-margin-b">
                     <div class="block-header bg-primary-darker">
@@ -20,16 +20,11 @@
                                 </button>
                             </li>
                         </ul>
-                        <h3>
-                            <slot name="header"></slot>
-                        </h3>
                     </div>
                     <div class="block-content">
-                        <slot name="text"></slot>
+                        <slot name="header"></slot>
+                        <slot name="content"></slot>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <slot name="footer"></slot>
                 </div>
             </div>
         </div>
@@ -42,6 +37,13 @@ export default {
     emits: [
         'close-modal'
     ],
+    props: {
+        previewTitle: {
+            type: String,
+            default: 'Responses',
+            description: 'Title of responses'
+        }
+    },
     methods: {
         closeModal() {
             this.$emit('close-modal');
@@ -55,7 +57,17 @@ export default {
     background-color: rgba(0, 0, 0, 0.4);
     display: block;
 }
-.modal-dialog {
-    top: 30%;
+
+.modal-card {
+    height: fit-content;
+    max-height: 95vh;
+    margin-top: 1%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 100000;
+}
+
+.modal-dialog::-webkit-scrollbar {
+    display: none;
 }
 </style>

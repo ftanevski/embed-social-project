@@ -4,21 +4,15 @@
         @close-modal="changeModalStatus(false)"
     >
         <template #header>
-            Lorem Ipsum
+            <h1 class="page-heading">{{ modalResponse.name }}'s Response</h1>
         </template>
-        <template #text>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                labore et dolore magna aliqua.
-            </p>
-        </template>
-        <template #footer>
-            <button class="btn btn-secondary" data-dismiss="modal" @click="changeModalStatus(false)">
-                <i class="fa fa-times push-10-r"></i> Cancel
-            </button>
-            <button class="btn btn-primary">
-                <i class="fas fa-check push-10-r"></i> Confirm
-            </button>
+        <template #content>
+            <data-table-row
+                :row="modalResponse"
+                :vertical="true"
+                @open-modal="openModalResponse"
+            >
+            </data-table-row>
         </template>
     </modal>
     <data-table-header @update-posts="updateNumOfPosts"></data-table-header>
@@ -27,7 +21,8 @@
             v-for="(response, index) in numberOfPosts"
             :row="response"
             :key="index"
-            @open-modal="changeModalStatus(true)"
+            @open-modal="openModalResponse"
+            :vertical="false"
 		>
         </data-table-row>
     </div>
@@ -59,7 +54,8 @@ export default {
         return {
             displayedPosts: 5,
             postsToLoad: 5,
-            modalActive: false
+            modalActive: false,
+            modalResponse: null
         }
     },
     props: {
@@ -87,6 +83,10 @@ export default {
         },
         changeModalStatus(value) {
             this.modalActive = value;
+        },
+        openModalResponse(row) {
+            this.modalActive = true;
+            this.modalResponse = row;
         }
     }
 };
