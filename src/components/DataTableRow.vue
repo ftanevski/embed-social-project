@@ -1,25 +1,24 @@
 <template>
-    <div class="row">
-        <div class="col-container">
-            <data-table-row-columns
-                v-for="(key, value, index) in row"
-                :title="value"
-                :text="key"
-                :key="index"
-            >
-            </data-table-row-columns>
-            <div class="col-md-2">
-                <p class="text-muted">Action</p>
-                <button class="btn btn-default btn-sm push-5-r">
-                    <i class="fa fa-edit"></i>
-                </button>
-                <button class="btn btn-default btn-sm push-5-r" @click="emitOpenModal">
-                    <i class="fa fa-eye"></i>
-                </button>
-                <button class="btn btn-default btn-sm push-5-r">
-                    <i class="fa fa-trash"></i>
-                </button>
-            </div>
+    <div :class="{ 'modal-row': vertical, 'table-row': !vertical }">
+        <data-table-row-columns
+            v-for="(key, value, index) in row"
+            :title="value"
+            :text="key"
+            :key="index"
+            :class="{ 'modal-row': vertical, 'col-md-2': !vertical }"
+        >
+        </data-table-row-columns>
+        <div v-if="!vertical" class="col-md-2">
+            <p class="text-muted">Action</p>
+            <button class="btn btn-default btn-sm push-5-r">
+                <i class="fa fa-edit"></i>
+            </button>
+            <button class="btn btn-default btn-sm push-5-r" @click="emitOpenModal">
+                <i class="fa fa-eye"></i>
+            </button>
+            <button class="btn btn-default btn-sm push-5-r">
+                <i class="fa fa-trash"></i>
+            </button>
         </div>
     </div>
 </template>
@@ -40,20 +39,31 @@ export default {
 			type: Object,
 			required: true,
             description: 'Object containing form response information'
-		}
+		},
+        vertical: {
+            type: Boolean,
+            required: true,
+            description: 'Boolean that sets the layout for the table rows'
+        }
 	},
     methods: {
         emitOpenModal() {
-            this.$emit('open-modal');
+            this.$emit('open-modal', this.row);
         }
     }
 };
 </script>
 
 <style>
-.col-container {
+.table-row {
     align-items: center;
     display: flex;
     padding: 20px;
+}
+
+.modal-row {
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
 }
 </style>
