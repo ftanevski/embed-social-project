@@ -13,7 +13,11 @@
             <button class="btn btn-default btn-sm push-5-r">
                 <i class="fa fa-edit"></i>
             </button>
-            <button class="btn btn-default btn-sm push-5-r" @click="emitOpenModal">
+            <button
+                class="btn btn-default btn-sm push-5-r"
+                @click="emitOpenModal"
+                data-testid="preview-button-test"
+            >
                 <i class="fa fa-eye"></i>
             </button>
             <button class="btn btn-default btn-sm push-5-r">

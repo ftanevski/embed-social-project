@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DataTableRowColumns Snapshot matches 1`] = `
+exports[`DataTableRowColumns Matches the snapshot. 1`] = `
 <div
-  class="col-md-2"
+  class=""
 >
   <p
     class="text-muted"

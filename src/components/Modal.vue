@@ -37,13 +37,6 @@ export default {
     emits: [
         'close-modal'
     ],
-    props: {
-        previewTitle: {
-            type: String,
-            default: 'Responses',
-            description: 'Title of responses'
-        }
-    },
     methods: {
         closeModal() {
             this.$emit('close-modal');

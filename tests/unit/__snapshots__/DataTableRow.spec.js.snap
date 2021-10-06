@@ -1,172 +1,139 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DataTableRow Snapshot matches 1`] = `
+exports[`DataTableRow Matches the snapshot 1`] = `
 <div
-  class="row"
+  class="modal-row"
 >
+  
   <div
-    class="col-container"
+    class="modal-row"
   >
-    
-    <div
-      class="col-md-2"
+    <p
+      class="text-muted"
+      data-testid="title-test"
     >
-      <p
-        class="text-muted"
-        data-testid="title-test"
-      >
-        Name
-      </p>
-      <div
-        class="font-w600"
-        data-testid="text-test"
-      >
-        Nicole
-      </div>
-    </div>
+      Name
+    </p>
     <div
-      class="col-md-2"
+      class="font-w600"
+      data-testid="text-test"
     >
-      <p
-        class="text-muted"
-        data-testid="title-test"
-      >
-        Email
-      </p>
-      <div
-        class="font-w600"
-        data-testid="text-test"
-      >
-        nicole@yahoo.com
-      </div>
-    </div>
-    <div
-      class="col-md-2"
-    >
-      <p
-        class="text-muted"
-        data-testid="title-test"
-      >
-        Recommendation
-      </p>
-      <div
-        class="font-w600"
-        data-testid="text-test"
-      >
-        no
-      </div>
-    </div>
-    <div
-      class="col-md-2"
-    >
-      <p
-        class="text-muted"
-        data-testid="title-test"
-      >
-        Feedback
-      </p>
-      <div
-        class="font-w600"
-        data-testid="text-test"
-      >
-        The box this comes in is 4 yard by 5 inch and weights 12 pound! i use it profusely when i'm in my garage.
-      </div>
-    </div>
-    <div
-      class="col-md-2"
-    >
-      <p
-        class="text-muted"
-        data-testid="title-test"
-      >
-        Date
-      </p>
-      <div
-        class="font-w600"
-        data-testid="text-test"
-      >
-        02/04/2021
-      </div>
-    </div>
-    <div
-      class="col-md-2"
-    >
-      <p
-        class="text-muted"
-        data-testid="title-test"
-      >
-        Form name
-      </p>
-      <div
-        class="font-w600"
-        data-testid="text-test"
-      >
-        Form 4
-      </div>
-    </div>
-    <div
-      class="col-md-2"
-    >
-      <p
-        class="text-muted"
-        data-testid="title-test"
-      >
-        Form type
-      </p>
-      <div
-        class="font-w600"
-        data-testid="text-test"
-      >
-        popup
-      </div>
-    </div>
-    <div
-      class="col-md-2"
-    >
-      <p
-        class="text-muted"
-        data-testid="title-test"
-      >
-        Status
-      </p>
-      <div
-        class="font-w600"
-        data-testid="text-test"
-      >
-        pending
-      </div>
-    </div>
-    
-    <div
-      class="col-md-2"
-    >
-      <p
-        class="text-muted"
-      >
-        Action
-      </p>
-      <button
-        class="btn btn-default btn-sm push-5-r"
-      >
-        <i
-          class="fa fa-edit"
-        />
-      </button>
-      <button
-        class="btn btn-default btn-sm push-5-r"
-      >
-        <i
-          class="fa fa-eye"
-        />
-      </button>
-      <button
-        class="btn btn-default btn-sm push-5-r"
-      >
-        <i
-          class="fa fa-trash"
-        />
-      </button>
+      Nicole
     </div>
   </div>
+  <div
+    class="modal-row"
+  >
+    <p
+      class="text-muted"
+      data-testid="title-test"
+    >
+      Email
+    </p>
+    <div
+      class="font-w600"
+      data-testid="text-test"
+    >
+      nicole@yahoo.com
+    </div>
+  </div>
+  <div
+    class="modal-row"
+  >
+    <p
+      class="text-muted"
+      data-testid="title-test"
+    >
+      Recommendation
+    </p>
+    <div
+      class="font-w600"
+      data-testid="text-test"
+    >
+      no
+    </div>
+  </div>
+  <div
+    class="modal-row"
+  >
+    <p
+      class="text-muted"
+      data-testid="title-test"
+    >
+      Feedback
+    </p>
+    <div
+      class="font-w600"
+      data-testid="text-test"
+    >
+      The box this comes in is 4 yard by 5 inch and weights 12 pound! i use it profusely when i'm in my garage.
+    </div>
+  </div>
+  <div
+    class="modal-row"
+  >
+    <p
+      class="text-muted"
+      data-testid="title-test"
+    >
+      Date
+    </p>
+    <div
+      class="font-w600"
+      data-testid="text-test"
+    >
+      02/04/2021
+    </div>
+  </div>
+  <div
+    class="modal-row"
+  >
+    <p
+      class="text-muted"
+      data-testid="title-test"
+    >
+      Form name
+    </p>
+    <div
+      class="font-w600"
+      data-testid="text-test"
+    >
+      Form 4
+    </div>
+  </div>
+  <div
+    class="modal-row"
+  >
+    <p
+      class="text-muted"
+      data-testid="title-test"
+    >
+      Form type
+    </p>
+    <div
+      class="font-w600"
+      data-testid="text-test"
+    >
+      popup
+    </div>
+  </div>
+  <div
+    class="modal-row"
+  >
+    <p
+      class="text-muted"
+      data-testid="title-test"
+    >
+      Status
+    </p>
+    <div
+      class="font-w600"
+      data-testid="text-test"
+    >
+      pending
+    </div>
+  </div>
+  
+  <!--v-if-->
 </div>
 `;

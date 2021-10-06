@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Modal Snapshot matches 1`] = `
+exports[`Modal Matches the snapshot. 1`] = `
 <div
   class="modal in modal-bg"
   data-testid="modal-bg-test"
 >
   <div
-    class="modal-dialog"
+    class="modal-dialog modal-card"
   >
     <div
       class="modal-content"
@@ -33,30 +33,19 @@ exports[`Modal Snapshot matches 1`] = `
               </button>
             </li>
           </ul>
-          <h3>
-            
-            Lorem Ipsum
-            
-          </h3>
         </div>
         <div
           class="block-content"
         >
+          
+          Lorem Ipsum
+          
           
           <p>
             Lorem ipsum dolor sit amet.
           </p>
           
         </div>
-      </div>
-      <div
-        class="modal-footer"
-      >
-        
-        <button>
-          Test Button
-        </button>
-        
       </div>
     </div>
   </div>

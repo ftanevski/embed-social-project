@@ -17,16 +17,17 @@ describe('DataTableRow', () => {
 		            form_name: "Form 4",
 		            form_type: "popup",
 		            status: "pending"
-				}
+				},
+                vertical: true
 			}
 		});
 	});
 	 
-	test('Snapshot matches', () => {
+	it('Matches the snapshot', () => {
 		expect(wrapper.element).toMatchSnapshot();
 	});
 
-	test('DataTableRow renders total of 8 columns', () => {
+	it('Renders a total of 8 columns in each DataTableRow', () => {
 		const dataTableRowColumns = wrapper.findAllComponents(DataTableRowColumns);
 		expect(dataTableRowColumns).toHaveLength(8);
 	});

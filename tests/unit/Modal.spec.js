@@ -8,17 +8,16 @@ describe('Modal', () => {
         wrapper = mount(Modal, {
             slots: {
                 header: 'Lorem Ipsum',
-                text: '<p>Lorem ipsum dolor sit amet.</p>',
-                footer: '<button>Test Button</button>'
+                content: '<p>Lorem ipsum dolor sit amet.</p>'
             }
         });
     });
 
-    test('Snapshot matches', () => {
+    it('Matches the snapshot.', () => {
         expect(wrapper.element).toMatchSnapshot();
     });
 
-    test('Clicking the X button will emit the closeModal to the parent component.', async () => {
+    it('Emits the closeModal to the parent component when clicking the X button.', async () => {
         let timesButton = wrapper.find('[data-testid="times-button-test"]');
         await timesButton.trigger('click');
 
@@ -26,7 +25,7 @@ describe('Modal', () => {
         expect(emittedEvents).toHaveLength(1);
     });
 
-    test('Clicking outside of the modal will emit the closeModal to the parent component', async () => {
+    it('Emits the closeModal to the parent component when clicking outside of the modal.', async () => {
         let modalBg = wrapper.find('[data-testid="modal-bg-test"]');
         await modalBg.trigger('click');
         
@@ -34,7 +33,7 @@ describe('Modal', () => {
         expect(emittedEvents).toHaveLength(1);
     });
 
-    test('Clicking inside of the modal will not cause an emit', async () => {
+    it('Doesn\'t emit anything when clicking inside of the modal.', async () => {
         let modalContent = wrapper.find('[data-testid="modal-content-test"]');
     
         await modalContent.trigger('click');
@@ -42,9 +41,8 @@ describe('Modal', () => {
         expect(emittedEvents).toBeUndefined();
     });
 
-    test('Renders the slot content', () => {
+    it('Renders the slot content', () => {
         expect(wrapper.html()).toContain('Lorem Ipsum');
         expect(wrapper.html()).toContain('<p>Lorem ipsum dolor sit amet.</p>');
-        expect(wrapper.html()).toContain('<button>Test Button</button>');
     });
 });

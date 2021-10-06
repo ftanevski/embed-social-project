@@ -13,25 +13,25 @@ describe('DataTableRowColumns', () => {
 		});
 	});
 
-	test('Snapshot matches', () => {
+	it('Matches the snapshot.', () => {
 		expect(wrapper.element).toMatchSnapshot();
 	});
 
-	test('Computed property titleToUpperCase works with current prop value', () => {
+	it('Transforms the current prop value to uppercase using the titleToUpperCase method.', () => {
 		expect(wrapper.vm.titleToUpperCase).toBe('Name');
 	});
 
-	test('Computed property titleToUpperCase works with different prop value', async () => {
+	it('Transforms a different prop value to uppercase using the titleToUpperCase method.', async () => {
 		await wrapper.setProps({ title: 'test' });
 		expect(wrapper.vm.titleToUpperCase).toBe('Test');
 	});
 
-	test('The HTML of <p class="text-muted"> is equal to titleToUpperCase', () => {
+	it('The HTML of <p class="text-muted"> is equal to titleToUpperCase', () => {
 		const title = wrapper.find('[data-testid="title-test"]');
 		expect(title.text()).toEqual(wrapper.vm.titleToUpperCase);
 	});
 
-	test('The HTML of <div class="font-w600"> is equal to the "text" property', () => {
+	it('The HTML of <div class="font-w600"> is equal to the "text" property', () => {
 		const textValue = wrapper.find('[data-testid="text-test"]');
 		expect(textValue.text()).toEqual(wrapper.vm.text);
 	})

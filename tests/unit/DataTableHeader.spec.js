@@ -8,11 +8,11 @@ describe('DataTableHeader', () => {
 		wrapper = mount(DataTableHeader);
 	});
  
-    test('Snapshot matches', () => {
+    it('Matches the snapshot', () => {
         expect(wrapper.element).toMatchSnapshot();
     });
  
-    test('Emits the event with the selected value payload', async () => {
+    it('Emits the event with the selected value payload', async () => {
         let dropdownSelector = '[data-testid="dropdown-test"]';
         let dropdownOptionsSelector = '[data-testid="dropdown-options-test"]';
  
@@ -26,7 +26,7 @@ describe('DataTableHeader', () => {
         expect(toString(emittedEvents[0][0])).toMatch(toString(expectedPayload));
     });
 
-    test('updateNumOfPosts method emits the selected value from the dropdown', async () => {
+    it('Emits the selected value from the dropdown using the updateNumOfPosts method', async () => {
         await wrapper.vm.updateNumOfPosts();
         expect(wrapper.emitted('update-posts')[0][0]).toBe(5);
 
