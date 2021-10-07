@@ -1,5 +1,5 @@
 <template>
-	<div class="">
+	<div>
 		<p class="text-muted" data-testid="title-test">
 			{{ titleToUpperCase.replace("_", " ") }}
 		</p>
@@ -31,9 +31,3 @@ export default {
 	}
 }
 </script>
-
-<style>
-.modal-row {
-    display: block;
-}
-</style>

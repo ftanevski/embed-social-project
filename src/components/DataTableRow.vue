@@ -1,11 +1,11 @@
 <template>
-    <div :class="{ 'modal-row': vertical, 'table-row': !vertical }">
+    <div :class="{ 'table-column': vertical, 'table-row': !vertical }">
         <data-table-row-columns
             v-for="(key, value, index) in row"
             :title="value"
             :text="key"
             :key="index"
-            :class="{ 'modal-row': vertical, 'col-md-2': !vertical }"
+            :class="{ 'table-column': vertical, 'col-md-2': !vertical }"
         >
         </data-table-row-columns>
         <div v-if="!vertical" class="col-md-2">
@@ -65,7 +65,7 @@ export default {
     padding: 20px;
 }
 
-.modal-row {
+.table-column {
     display: block;
     padding: 10px;
     margin-top: 10px;

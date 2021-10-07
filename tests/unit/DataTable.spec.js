@@ -78,7 +78,7 @@ describe('DataTable', () => {
 
     it('Opens the modal with the correct data', async () => {
         let modalWrapper = wrapper.findComponent(Modal);
-        expect(modal.exists()).toBeFalsy();
+        expect(modalWrapper.exists()).toBeFalsy();
 
         let secondRowFromDataTable = wrapper.findAllComponents(DataTableRow)[1];
         let modalPreviewButton = secondRowFromDataTable.find('[data-testid="preview-button-test"]');
