@@ -66,7 +66,6 @@ export default {
 }
 
 .table-column {
-    display: block;
     padding: 10px;
     margin-top: 10px;
 }
