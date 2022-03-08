@@ -19,7 +19,7 @@
             </select>
         </div>
         <div class="left-button">
-            <button class="btn btn-secondary">Filter Submissions</button>
+            <button class="btn btn-secondary" @click="openFilterModal">Filter Submissions</button>
         </div>
         <div class="right-button">
             <button class="btn btn-primary">Create Submission</button>
@@ -37,11 +37,15 @@ export default {
         }
     },
     emits: [
-        'update-posts'
+        'update-posts',
+        'filter-modal'
     ],
     methods: {
         updateNumOfPosts() {
             this.$emit('update-posts', this.selectedValue);
+        },
+        openFilterModal() {
+            this.$emit('filter-modal')
         }
     }
 }

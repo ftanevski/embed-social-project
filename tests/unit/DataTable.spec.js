@@ -34,9 +34,9 @@ describe('DataTable', () => {
         expect(rows).toHaveLength(5);
  
         await button.trigger('click');
-        let newRows = wrapper.findAllComponents(DataTableRow);
+        rows = wrapper.findAllComponents(DataTableRow);
  
-        expect(newRows).toHaveLength(10);
+        expect(rows).toHaveLength(10);
     });
  
 	it('Hides the Load More button When all submissions are added to the table', async () => {

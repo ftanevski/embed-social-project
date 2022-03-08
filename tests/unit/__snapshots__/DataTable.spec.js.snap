@@ -6,6 +6,7 @@ exports[`DataTable Matches the snapshot 1`] = `
 >
   
   <!--v-if-->
+  <!--v-if-->
   <div
     class="row header-row"
   >

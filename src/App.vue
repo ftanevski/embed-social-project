@@ -1,12 +1,6 @@
 <template>
-    <div class="container-fluid">
-        <div class="row">
-            <data-table
-                :responses="tableSubmissions"
-            >
-            </data-table>
-        </div>
-    </div>
+    <data-table :responses="tableSubmissions">
+    </data-table>
 </template>
 
 <script>
@@ -35,8 +29,8 @@ export default {
 
 <style>
 #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
     padding: 20px;
     margin: 20px;
 }

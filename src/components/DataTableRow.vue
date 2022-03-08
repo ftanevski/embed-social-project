@@ -5,7 +5,7 @@
             :title="value"
             :text="key"
             :key="index"
-            :class="{ 'table-column': vertical, 'col-md-2': !vertical }"
+            :class="{ 'col-md-2': !vertical }"
         >
         </data-table-row-columns>
         <div v-if="!vertical" class="col-md-2">
@@ -66,7 +66,7 @@ export default {
 }
 
 .table-column {
-    padding: 10px;
+    padding: 20px;
     margin-top: 10px;
 }
 </style>

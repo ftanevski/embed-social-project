@@ -1,27 +1,35 @@
 <template>
     <modal 
-        v-if="modalActive"
-        @close-modal="changeModalStatus"
+        v-if="responseModalActive"
+        @close-modal="responseModalStatus"
     >
         <template #header>
-            <h1 class="page-heading push-20-l">{{ modalResponse.name }}'s Response</h1>
+            <h2 class="font-w600 push-20-l">{{ modalResponse.name }}'s Response</h2>
         </template>
         <template #content>
             <data-table-row
                 :row="modalResponse"
                 :vertical="true"
-                @open-modal="changeModalStatus"
+                @open-modal="responseModalStatus"
             >
             </data-table-row>
         </template>
     </modal>
-    <data-table-header @update-posts="updateNumOfPosts"></data-table-header>
+    <data-filter
+        v-if="filterModalActive"
+        @change-filter-modal-status="changeFilterModalStatus">
+    </data-filter>
+    <data-table-header
+        @update-posts="updateNumOfPosts"
+        @filter-modal="changeFilterModalStatus"
+    >
+    </data-table-header>
     <div class="col border">
         <data-table-row
             v-for="(response, index) in numberOfPosts"
             :row="response"
             :key="index"
-            @open-modal="changeModalStatus"
+            @open-modal="responseModalStatus"
             :vertical="false"
 		>
         </data-table-row>
@@ -41,6 +49,7 @@
 <script>
 import DataTableRow from './DataTableRow';
 import DataTableHeader from './DataTableHeader';
+import DataFilter from './DataFilter';
 import Modal from './Modal';
  
 export default {
@@ -48,14 +57,16 @@ export default {
     components: {
         DataTableRow,
         DataTableHeader,
+        DataFilter,
         Modal
     },
     data() {
         return {
             displayedPosts: 5,
             postsToLoad: 5,
-            modalActive: false,
-            modalResponse: null
+            responseModalActive: false,
+            filterModalActive: false,
+            modalResponse: false
         }
     },
     props: {
@@ -81,9 +92,12 @@ export default {
             this.displayedPosts = option;
             this.postsToLoad = option;
         },
-        changeModalStatus(row) {
-            this.modalActive = !this.modalActive;
+        responseModalStatus(row) {
+            this.responseModalActive = !this.responseModalActive;
             this.modalResponse = row;
+        },
+        changeFilterModalStatus() {
+            this.filterModalActive = !this.filterModalActive;
         }
     }
 };

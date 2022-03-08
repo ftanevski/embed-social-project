@@ -34,17 +34,17 @@ exports[`Modal Matches the snapshot. 1`] = `
             </li>
           </ul>
         </div>
-        <div
-          class="block-content"
-        >
+        <div>
           
           Lorem Ipsum
           
-          
-          <p>
-            Lorem ipsum dolor sit amet.
-          </p>
-          
+          <div>
+            
+            <p>
+              Lorem ipsum dolor sit amet.
+            </p>
+            
+          </div>
         </div>
       </div>
     </div>

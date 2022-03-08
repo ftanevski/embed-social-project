@@ -6,7 +6,7 @@ exports[`DataTableRow Matches the snapshot 1`] = `
 >
   
   <div
-    class="table-column"
+    class=""
   >
     <p
       class="text-muted"
@@ -22,7 +22,7 @@ exports[`DataTableRow Matches the snapshot 1`] = `
     </div>
   </div>
   <div
-    class="table-column"
+    class=""
   >
     <p
       class="text-muted"
@@ -38,7 +38,7 @@ exports[`DataTableRow Matches the snapshot 1`] = `
     </div>
   </div>
   <div
-    class="table-column"
+    class=""
   >
     <p
       class="text-muted"
@@ -54,7 +54,7 @@ exports[`DataTableRow Matches the snapshot 1`] = `
     </div>
   </div>
   <div
-    class="table-column"
+    class=""
   >
     <p
       class="text-muted"
@@ -70,7 +70,7 @@ exports[`DataTableRow Matches the snapshot 1`] = `
     </div>
   </div>
   <div
-    class="table-column"
+    class=""
   >
     <p
       class="text-muted"
@@ -86,7 +86,7 @@ exports[`DataTableRow Matches the snapshot 1`] = `
     </div>
   </div>
   <div
-    class="table-column"
+    class=""
   >
     <p
       class="text-muted"
@@ -102,7 +102,7 @@ exports[`DataTableRow Matches the snapshot 1`] = `
     </div>
   </div>
   <div
-    class="table-column"
+    class=""
   >
     <p
       class="text-muted"
@@ -118,7 +118,7 @@ exports[`DataTableRow Matches the snapshot 1`] = `
     </div>
   </div>
   <div
-    class="table-column"
+    class=""
   >
     <p
       class="text-muted"

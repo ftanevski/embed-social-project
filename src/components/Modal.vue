@@ -21,9 +21,11 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="block-content">
+                    <div>
                         <slot name="header"></slot>
-                        <slot name="content"></slot>
+                        <div>
+                            <slot name="content"></slot>
+                        </div>
                     </div>
                 </div>
             </div>
